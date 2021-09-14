@@ -1,0 +1,644 @@
+/*reset css*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*narbar*/
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px 0;
+    background: transparent;
+    align-items: center;
+}
+.navbar p{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.navbar .navbar__menulist ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+.navbar .navbar__menulist ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #999;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+    left: 1px;
+}
+.navbar .navbar__menulist ul li:hover::after{
+    width: 80%;  
+}
+.navbar .navbar__menulist ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 12px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar .navbar__menulist ul li:last-child{
+    padding-right: 0;
+}
+/*section1*/
+.section1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/tú\ khùng11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parttwo{
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.parttwo .btn{
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.parttwo .btn:hover{
+    background: white;
+    color: black;
+}
+/* start section2*/
+.section2{
+    padding: 100px 120px;
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .partfour img{
+    width: 350px;
+    height: 470px;
+    margin-left: 90px;
+}
+/*thanh skill*/
+.section2 .skills .skills-item{
+    margin-bottom: 10px;
+} 
+.section2 .skills .skills-item .skills-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.section2 .skills .skills-info span{
+    font-weight: 600;
+    font-size: 18px;
+    color: #999;
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+}
+.section2 .skills .skills-item .line{
+    height: 10px;
+    width: 100%;
+    background: #000;
+    position: relative;
+    border-radius: 3px;
+}
+.section2 .skills .skills-item .line::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: #999;
+}
+.section2 .skills .skills-item .ps::before{
+    width: 60%;
+}
+.section2 .skills .skills-item .ai::before{
+    width: 70%;
+}
+.section2 .skills .skills-item .dw::before{
+    width: 70%;
+}
+.section2 .skills .skills-item .id::before{
+    width: 70%;
+}
+.section2 .skills .skills-item .lr::before{
+    width: 60%;
+}
+/*end thanh skills*/
+
+/*end section2*/
+
+/*start section3 */
+.section3{
+    width: 100%;
+    height: 540px;
+    padding: 100px 120px;
+    background-image: url(../img/serviceBg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.section3 .partfive .btn{
+    height: 40px;
+    width: 160px;
+    background: white;
+    color: black;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+.section3 .partfive .btn:hover{
+    background: #999;
+    color: #fff;
+}
+.section3 .partsix{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+.section3 .partsix .item{
+    width: 250px;
+    height: 250px;
+    background: #fff;
+}
+.section3 .partsix .item:nth-child(1){
+    margin-right: 20px;
+}
+.section3 .partsix .item .small-item{
+    width: 210px;
+    height: 210px;
+    margin: 20px 20px;
+    border: 1px solid #999;
+    border-radius: 1px;
+    text-align: center;
+}
+.section3 .partsix .item .small-item .fas{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: black;
+    border: 2px solid #999;
+    text-align: center;
+    padding-top: 20px;
+    background: transparent;
+    transition: 0.5s;
+    margin: 20px 0;
+}
+.section3 .partsix .item:hover .fas{
+    background: black;
+    color: white;
+}
+/*end section3*/
+
+/*start section4*/
+.section4{
+    width: 100%;
+    height: 1000px;
+    padding: 100px 120px;
+    text-align: center;
+}
+.section4 .partseven ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #696969;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.section4 .partseven ul li:hover{
+    color: black;
+}
+.section4 .partseven .avtiveborder{
+    color: #000 !important;
+    border-bottom: 2px solid #000;
+}
+.section4 .parteight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section4 .parteight .portfolio-item{
+    position: relative;
+}
+.section4 .parteight .portfolio-item img{
+    width: 350px;
+    height: 300px;
+    transition: all 0.5s;
+}
+.section4 .parteight .portfolio-item .picture-img{
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    transition: all 0.5s;
+}
+.section4 .parteight .portfolio-item:hover img{
+    transform: rotate(10deg) scale(1.4);
+}
+/*section5*/
+.section5{
+    width: 100%;
+    height: 660px;
+    background-image: url(../img/detailImg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 5px 5px 13px #a2a2a2;
+    position: relative;
+    justify-content: space-between;
+}
+.section5 .partnine{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    padding: 100px 80px 100px 120px;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+.section5 .partnine .btn-hireme{
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+    background: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.section5 .partnine .btn-hireme:hover{
+    background: #696969;
+    color: white;
+}
+.section5 .partten{
+    background: white;
+    flex-basis: 50%;
+    width: 100%;
+    height: 98%;
+    padding: 80px;
+}
+.section5 .partten .study-btn{
+    height: 40px;
+    width: 230px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.section5 .partten .fas{
+    font-size: 24px;
+    color: #696969;
+    margin-right: 10px;
+}
+
+/*section6*/
+.section6{
+    width: 100%;
+    height: 720px;
+    padding: 100px 120px;
+    text-align: center;
+}
+.section6 .parteleven{
+    display: flex;
+    justify-content: space-between;
+}
+.section6 .parteleven .people{
+    width: 340px;
+    height: 310px;
+    box-shadow: 2px 2px 10px #bfbfbf;    
+    background: #e9e9e9;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.5s;
+    margin-top: 50px;
+}
+.section6 .parteleven .people:hover{
+    background: #383838;
+    color: #fff;
+}
+.section6 .parteleven .people:hover p{
+    color: white;
+}
+.section6 .parteleven .people:hover h3{
+    color: white;
+}
+.section6 .parteleven .people-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    border: 4px solid rgba(102, 102, 102, 0.2);
+    margin: 30px auto 0;
+}
+.section6 .parteleven .people-content p{
+    margin: 24px;
+}
+/*section7*/
+.section7{
+    width: 100%;
+    height: 370px;
+    padding: 100px 120px;
+    text-align: center;
+    background-image: url(../img/funfact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.section7 .funfact{
+    width: 250px;
+    height: 170px;
+    background: rgba(83, 83, 83, 0.9);
+}
+.section7 .funfact .underline{
+    width: 40px;
+    height: 2px;
+    background: #d1d1d1;
+    margin: 0 auto;
+    display: block;
+}
+/*section8*/
+.section8{
+    width: 100%;
+    height: 1000px;
+    padding: 100px 120px;
+    text-align: center;
+}
+.section8 .content-blog{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section8 .content-blog .blog{
+    width: 550px;
+    height: 330px;
+    overflow: hidden;
+}
+.section8 .content-blog .blog img{
+    width: 550px;
+    height: 330px;
+    transition: all 0.5s;
+}
+.section8 .content-blog .blog img:hover{
+    transform: rotate(10deg) scale(1.4);
+}
+/*section9*/
+.section9{
+    width: 100%;
+    height: 780px;
+    padding: 100px 120px;
+    background-image: url(../img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.section9 .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section9 .contactform{
+    height: 450px;
+    width: 540px;
+    padding: 36px 40px;
+    background: #fff;
+    text-align: left;
+}
+.section9 .contactform-leftside h3{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    color: #424242;
+}
+.section9 .contactform-leftside .address,.phone,.email,.website{
+    display: inline-flex;
+    margin-top: 20px;
+}
+/*address*/
+.section9 .contactform-leftside .address .fas{
+    margin-right: 16px;
+    font-size: 18px;
+}
+.section9 .contactform-leftside .address h4{
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+.section9 .contactform-leftside .address p{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 0.9px;
+    margin-top: 3px;
+}
+/*phone num*/
+.section9 .contactform-leftside .phone .fas{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.section9 .contactform-leftside .phone h4{
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+.section9 .contactform-leftside .phone p{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 0.9px;
+    margin-top: 3px;
+}
+/*email*/
+.section9 .contactform-leftside .email .fas{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.section9 .contactform-leftside .email h4{
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+.section9 .contactform-leftside .email p{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 0.9px;
+    margin-top: 3px;
+}
+/*Website*/
+.section9 .contactform-leftside .website .fas{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.section9 .contactform-leftside .website h4{
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+.section9 .contactform-leftside .website p{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 0.9px;
+    margin-top: 3px;
+}
+/*social*/
+.section9 .contactform-leftside .social h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #424242;
+}
+.section9 .contactform-leftside .social .social-icon .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #424242;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    transition: all .3s ease;
+    margin-right: 5px;
+}
+.section9 .contactform-leftside .social .social-icon .fab:hover{
+    background: #999;
+    transform: translateY(-10px);
+}
+/*contact form*/
+.section9 .contactform-rightside .input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+.section9 .contactform-rightside .input-group input, textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    color: #999;
+    background: transparent;
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+}
+.section9 .contactform-rightside .input-group textarea{
+    height: 130px;
+}
+.section9 .contactform-rightside button{
+    height: 50px;
+    width: 130px;
+    background: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.section9 .contactform-rightside .group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*section10*/
+.section10{
+    width: 100%;
+    height: 100px;
+    background: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 0.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end*/
+/*preloader*/
+#preloader{
+    background: #000 url(../img/loading.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#nsc{
+    display: none;
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #383838;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.gotopbtn .fas{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
